@@ -1,0 +1,21 @@
+<h1>Series</h1>
+
+  <div class="row column-gap-3">
+        <% @series.each do |serie|%>
+
+            <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header"> <%= serie.name %> </div>
+            <div class="card-body">
+                <h5 class="card-title"> <%= serie.director %> </h5>
+                <p class="card-text"> <%= serie.synopsis %> </p>
+            </div>
+            </div>
+
+        <%end%>    
+
+  </div>
+
+
+<%= link_to "Agregar Documental", series_new_path, class:"btn btn-dark" %>
+<%= link_to "Home", tv_index_path, class:"btn btn-dark" %>
+

@@ -1,0 +1,21 @@
+<h1>Películas</h1>
+
+  <div class="row column-gap-3">
+        <% @movies.each do |movie|%>
+
+            <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header"> <%= movie.name %> </div>
+            <div class="card-body">
+                <h5 class="card-title"> <%= movie.director %> </h5>
+                <p class="card-text"> <%= movie.synopsis %> </p>
+            </div>
+            </div>
+
+        <%end%>    
+
+  </div>
+
+<%= link_to "Nuevo Post", movies_new_path, class:"btn btn-dark" %>
+<%= link_to "Home", tv_index_path, class:"btn btn-dark" %>
+
+
