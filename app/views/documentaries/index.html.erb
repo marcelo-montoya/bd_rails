@@ -1,23 +1,31 @@
+<h1 class="title">Documentales</h1>
 
-<h1>Documentales</h1>
-
-  <div class="row column-gap-3">
-
-        <% @documentaries.each do |documentary|%>
-
-            <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
-            <div class="card-header"> <%= documentary.name %> </div>
-            <div class="card-body">
-                <h5 class="card-title"> <%= documentary.director %> </h5>
-                <p class="card-text"> <%= documentary.synopsis %> </p>
-            </div>
-            </div>
-
-        <%end%>    
-    
-
-  </div>
+<div class="content">
 
 
-<%= link_to "Agregar Documental", documentaries_new_path, class:"btn btn-dark" %>
-<%= link_to "Home", tv_index_path, class:"btn btn-dark" %>
+      <div class="row column-gap-3">
+
+            <% @documentaries.each do |documentary|%>
+
+                <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header"> <%= documentary.name %> </div>
+                <div class="card-body">
+                    <h5 class="card-title"> <%= documentary.director %> </h5>
+                    <p class="card-text"> <%= documentary.synopsis %> </p>
+                </div>
+                </div>
+
+            <%end%>    
+        
+
+      </div>
+
+</div>
+
+
+
+
+    <ul class="buttons-view">
+      <li><%= link_to "Agregar Documental", documentaries_new_path, class:"btn btn-dark" %> </li>
+      <li><%= link_to "Home", tv_index_path, class:"btn btn-dark" %> </li>
+    </ul>

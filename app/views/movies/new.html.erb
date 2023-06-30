@@ -1,26 +1,36 @@
-<h1>Agregar película</h1>
+<h1 class="title">Agregar película</h1>
 
-<%= form_with model: @movie, method: :post do |form| %>
-
-    <div>
-        <%= form.label :name, "Nombre", class:"form-label" %>
-        <%= form.text_field :name, class:"form-control" %>
-    </div>
-    <div>
-        <%= form.label :director, "Director", class:"form-label" %>
-        <%= form.text_field :director, class:"form-control" %>
-    </div>
-    <div>
-        <%= form.label :synopsis, "Sinopsis", class:"form-label" %>
-        <%= form.text_area :synopsis, class:"form-control" %>
-    </div>
-
-    <div>
-        <%= form.submit "Envíar", class:"btn btn-dark" %>
-    </div>
+<div class="content">
 
 
-<% end %>
+    <%= form_with model: @movie, method: :post do |form| %>
 
-<%= link_to "All Movies", movies_index_path, class:"btn btn-dark" %>
-<%= link_to "Home", tv_index_path, class:"btn btn-dark" %>
+        <div>
+            <%= form.label :name, "Nombre", class:"form-label" %>
+            <%= form.text_field :name, class:"form-control" %>
+        </div>
+        <div>
+            <%= form.label :director, "Director", class:"form-label" %>
+            <%= form.text_field :director, class:"form-control" %>
+        </div>
+        <div>
+            <%= form.label :synopsis, "Sinopsis", class:"form-label" %>
+            <%= form.text_area :synopsis, class:"form-control" %>
+        </div>
+
+        <div>
+            <%= form.submit "Envíar", class:"btn btn-dark" %>
+        </div>
+
+
+    <% end %>
+
+
+</div>
+
+
+
+    <ul class="buttons-view">
+        <li><%= link_to "All Movies", movies_index_path, class:"btn btn-dark" %></li>
+        <li><%= link_to "Home", tv_index_path, class:"btn btn-dark" %></li>
+    </ul>

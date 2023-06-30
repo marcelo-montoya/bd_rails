@@ -1,23 +1,27 @@
-<h1>Tv#index</h1>
-<p>Find me in app/views/tv/index.html.erb</p>
 
-  <div class="row">
-    <div class="col-6 col-md-4">
-        
-        <%= link_to "Agregar película", movies_new_path, class:"btn btn-dark" %>
-        <%= link_to "Ver Películas", movies_index_path, class:"btn btn-dark" %>
-    
-    </div>
-    <div class="col-6 col-md-4">
-        
-        <%= link_to "Agregar Documental", documentaries_new_path, class:"btn btn-dark" %>
-        <%= link_to "Ver Documentales", documentaries_index_path, class:"btn btn-dark" %>    
-    
-    </div>
-    <div class="col-6 col-md-4">
+<h1 class="title">Agrega o mira la lista de contenido</h1>
 
-        <%= link_to "Agregar Series", series_new_path, class:"btn btn-dark" %>
-        <%= link_to "Ver Series", series_index_path, class:"btn btn-dark" %>
-    
-    </div>
-  </div>
+<div class="content-index-view">
+
+      <div class="row">
+        <div class="col-6 col-md-4">
+            
+            <%= link_to "Agregar película", movies_new_path, class:"btn btn-dark" %>
+            <%= link_to "Ver Películas", movies_index_path, class:"btn btn-dark" %>
+        
+        </div>
+        <div class="col-6 col-md-4">
+            
+            <%= link_to "Agregar Documental", documentaries_new_path, class:"btn btn-dark" %>
+            <%= link_to "Ver Documentales", documentaries_index_path, class:"btn btn-dark" %>    
+        
+        </div>
+        <div class="col-6 col-md-4">
+
+            <%= link_to "Agregar Series", series_new_path, class:"btn btn-dark" %>
+            <%= link_to "Ver Series", series_index_path, class:"btn btn-dark" %>
+        
+        </div>
+      </div>
+
+</div>
