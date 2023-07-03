@@ -8,18 +8,18 @@
 
 5.times do |i| 
 
-    Documentary.create(name: "Documental #{i + 1}", director: "Director #{i + 1}", synopsis: "Sinopsis" )
+    Documentary.create(name: "Documental #{i + 1}", director: "Director #{i + 1}", synopsis: Faker::Lorem.sentences )
 
 end
 
 5.times do |i| 
 
-    Movie.create(name: "Película #{i + 1}", director: "Director #{i + 1}", synopsis: "Sinopsis" )
+    Movie.create(name: Faker::Movie.title, director: "Director #{i + 1}", synopsis: Faker::Lorem.sentences )
 
 end
 
 5.times do |i| 
 
-    Serie.create(name: "Serie #{i + 1}", director: "Director #{i + 1}", synopsis: "Sinopsis" )
+    Serie.create(name: "Serie #{i + 1}", director: "Director #{i + 1}", synopsis: Faker::Lorem.sentences )
 
 end
